@@ -18,13 +18,20 @@ vector<string> Read_File(string& filename)
 
     if(infile)
     {
+#if 0 //一种方法，需要使用这个方法只需要把0改成1，然后把下面的1改成0
         while(!infile.eof())
         {
             infile>>strData;
             vctData.push_back(strData);
         }
         vctData.pop_back(); //因为上述操作将最后一行push了两遍
-        
+#elif 1
+        while(getline(infile, strData))
+        {
+            vctData.push_back(strData);
+        }
+#endif
+    
         return vctData;
     }
     else

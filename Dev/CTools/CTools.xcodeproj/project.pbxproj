@@ -10,6 +10,7 @@
 		A16084122A32F76300287DAB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A16084112A32F76300287DAB /* main.cpp */; };
 		A160841C2A32F85E00287DAB /* ReadFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A160841B2A32F85E00287DAB /* ReadFile.cpp */; };
 		A160841F2A32F89F00287DAB /* WriteFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A160841E2A32F89F00287DAB /* WriteFile.cpp */; };
+		A18EA9E72A33148C002B9673 /* ROWString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A18EA9E62A33148C002B9673 /* ROWString.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,9 @@
 		A16084202A32F91B00287DAB /* test_write.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_write.txt; sourceTree = "<group>"; };
 		A16084212A32F91B00287DAB /* test_read.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_read.txt; sourceTree = "<group>"; };
 		A16084232A32FE7400287DAB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A18EA9E32A3313DC002B9673 /* Person.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Person.txt; sourceTree = "<group>"; };
+		A18EA9E52A33147C002B9673 /* ROWString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ROWString.h; sourceTree = "<group>"; };
+		A18EA9E62A33148C002B9673 /* ROWString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ROWString.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		A16084102A32F76300287DAB /* CTools */ = {
 			isa = PBXGroup;
 			children = (
+				A18EA9E12A330F07002B9673 /* CString */,
 				A16084222A32FE5C00287DAB /* Headers */,
 				A16084182A32F7C000287DAB /* CFile */,
 				A16084112A32F76300287DAB /* main.cpp */,
@@ -100,6 +105,24 @@
 				A16084232A32FE7400287DAB /* PrefixHeader.pch */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		A18EA9E12A330F07002B9673 /* CString */ = {
+			isa = PBXGroup;
+			children = (
+				A18EA9E22A330F16002B9673 /* Data */,
+				A18EA9E52A33147C002B9673 /* ROWString.h */,
+				A18EA9E62A33148C002B9673 /* ROWString.cpp */,
+			);
+			path = CString;
+			sourceTree = "<group>";
+		};
+		A18EA9E22A330F16002B9673 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A18EA9E32A3313DC002B9673 /* Person.txt */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A16084122A32F76300287DAB /* main.cpp in Sources */,
+				A18EA9E72A33148C002B9673 /* ROWString.cpp in Sources */,
 				A160841F2A32F89F00287DAB /* WriteFile.cpp in Sources */,
 				A160841C2A32F85E00287DAB /* ReadFile.cpp in Sources */,
 			);

@@ -7,8 +7,9 @@
 
 #include "CFile//ReadFile.h"
 #include "CFile//WriteFile.h"
+#include "CString/ROWString.h"
 
 int main()
 {
-    Test_WriteFile();
+    Test_ROWString();
 }
