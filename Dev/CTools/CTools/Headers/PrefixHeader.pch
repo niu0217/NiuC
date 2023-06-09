@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  CTools
+//
+//  Created by niu0217 on 2023/6/9.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#include<iostream>
+#include<fstream>
+
+#include<vector>
+#include<string>
+#include<queue>
+#include<stack>
+#include<map>
+#include<unordered_map>
+#include<unordered_set>
+
+using namespace std;
+
+
+#endif /* PrefixHeader_pch */
