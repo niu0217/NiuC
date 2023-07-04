@@ -51,6 +51,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A15862032A543F0900C1718C /* CTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CTest;
+			sourceTree = "<group>";
+		};
+		A15862042A543F6900C1718C /* HouJie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HouJie;
+			sourceTree = "<group>";
+		};
 		A16084052A32F76300287DAB = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +84,9 @@
 		A16084102A32F76300287DAB /* CTools */ = {
 			isa = PBXGroup;
 			children = (
+				A15862042A543F6900C1718C /* HouJie */,
+				A15862032A543F0900C1718C /* CTest */,
+				A1E2FC442A5407C400EE0BDC /* CAlgorithm */,
 				A18EA9E12A330F07002B9673 /* CString */,
 				A16084222A32FE5C00287DAB /* Headers */,
 				A16084182A32F7C000287DAB /* CFile */,
@@ -125,6 +142,13 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		A1E2FC442A5407C400EE0BDC /* CAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CAlgorithm;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,7 +176,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					A160840D2A32F76300287DAB = {
 						CreatedOnToolsVersion = 14.2;
@@ -225,6 +249,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -283,6 +308,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -305,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CTools/Headers/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/CTools";
@@ -316,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CTools/Headers/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/CTools";
